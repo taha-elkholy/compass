@@ -125,6 +125,15 @@ class QiblahCompassWidget extends StatelessWidget {
               alignment: Alignment.center,
               child: _needleSvg,
             ),
+            Positioned(
+              bottom: 70,
+              child: Text(
+                "${qiblahDirection.offset.toInt()}°",
+                style: const TextStyle(
+                  fontSize: 30,
+                ),
+              ),
+            )
           ],
         );
       },
